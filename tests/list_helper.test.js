@@ -1,6 +1,6 @@
 const listHelper = require('../utils/list_helper')
 
-describe('total likes', () => {
+describe.skip('total likes', () => {
 	const lisWithOneBlog = [
 		{
 			_id: '5a422aa71b54a676234d17f8',
@@ -52,7 +52,7 @@ describe('total likes', () => {
 
 })
 
-describe('most likes', () => {
+describe.skip('most likes', () => {
 	const lisWithOneBlog = [
 		{
 			_id: '5a422aa71b54a676234d17f8',
@@ -91,17 +91,17 @@ describe('most likes', () => {
 		}
 	]
 
-	test('works with one blog', () => {
+	test.skip('works with one blog', () => {
 		const result = listHelper.favoriteBlog(lisWithOneBlog)
 		expect(result).toBe(5)
 	})
 
-	test('works wit many blogs', () => {
+	test.skip('works wit many blogs', () => {
 		const result = listHelper.favoriteBlog(listWithManyBlogs)
 		expect(result).toBe(12)
 	})
 
-	test('works with empty array', () => {
+	test.skip('works with empty array', () => {
 		const result = listHelper.favoriteBlog([])
 		expect(result).toBe(0)
 	})
