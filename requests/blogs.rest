@@ -1,0 +1,40 @@
+#Get all blogs
+GET http://localhost:3003/api/blogs
+
+###
+# Get one blog
+GET http://localhost:3003/api/blogs/62f1725e5a1328324533143df58
+
+###
+# Add a blog
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InNlYmFwZXJpIiwiaWQiOiI2MmZjMmZhNWQ4YjQ2YzQ3MTJmMGZkZDkiLCJpYXQiOjE2NjA4MzkyNTd9.I5v8mdNLq8RB9XYeHjR-WGUBDQxBC7O10JmYuDhBsqg
+
+{
+  "title": "testing refactoring",
+  "author": "this is an author",
+  "url": "http://testurl.com",
+  "likes": 120
+}
+
+###
+# Remove on blog
+DELETE http://localhost:3003/api/blogs/62fe63b71ae4b7abc8a8edf8
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InNlYmFwZXJpIiwiaWQiOiI2MmZjMmZhNWQ4YjQ2YzQ3MTJmMGZkZDkiLCJpYXQiOjE2NjA4MzkyNTd9.I5v8mdNLq8RB9XYeHjR-WGUBDQxBC7O10JmYuDhBsqg
+
+###
+# Update a blog
+
+PUT http://localhost:3003/api/blogs/62f81780e48536020e765102
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InNlYmFwZXJpIiwiaWQiOiI2MmZjMmZhNWQ4YjQ2YzQ3MTJmMGZkZDkiLCJpYXQiOjE2NjA4MzYwMTB9.YsmXG6AtNVy8QLIjEQ_nE4o0fOmOTwZlHtnZ5EdM6dU
+
+{
+  "title": "updated test",
+  "author": "EL test",
+  "url": "httpsss",
+  "likes": 35
+}
+
+
